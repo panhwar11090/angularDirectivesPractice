@@ -332,8 +332,55 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-header></app-header>
-<!-- <app-courses></app-courses> -->
-<app-courses></app-courses>
-<app-search></app-search>
+<!-- this is the code of courses project -->
+<!-- <app-header></app-header>
+<app-courses></app-courses> -->
+
+
+<!-- this is the code of tempelate refrence
+<app-demo></app-demo>
+<app-customer-list #customer></app-customer-list>
+<p>You have selected {{customer.selectedCustomer?.name}}</p> -->
+
+
+
+<!-- //this is the code of viewchild use  in component
+
+<div>
+  <label>DOB: </label>
+  <input type="date" #dobInput (blur)="calculateAge()">
+</div>
+
+<div>
+  <label > Age:</label>
+  <input type="text" #ageInput>
+</div>
+
+<app-demowork #demComp></app-demowork>
+<p *ngIf="demComp">{{ demComp.sayHello() }}</p> -->
+
+this example is used for ngcontent
+<div class="container">
+  <h2>New in Smart Phones</h2>
+
+  <div class="more-products">
+    <app-product>
+      <h4 class="title">New in iPhone</h4>
+      <button class="btn btn-more">Show more in iPhone</button>
+    </app-product>
+    <app-product>
+      <h4 class="title">New in Samsung</h4>
+      <button class="btn btn-more">Show more in Samsung</button>
+    </app-product>
+    <app-product>
+      <h4 class="title">New in OnePlus</h4>
+      <button class="btn btn-more">Show more in OnePlus</button>
+    </app-product>
+    <app-product>
+      <h4 class="title">New in MI</h4>
+      <button class="btn btn-more">Show more in MI</button>
+    </app-product>
+  </div>
+</div>
+
 <router-outlet />

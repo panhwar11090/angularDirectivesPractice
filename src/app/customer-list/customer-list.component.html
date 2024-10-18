@@ -1,0 +1,26 @@
+
+<!-- so in this exapmle we are using template refrence variable 
+ sending data in parent component and there is p tag which shows the selected user 
+ -->
+<table class='table'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Select</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let customer of customers">
+        <td>{{customer.customerNo}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.address}}</td>
+        <td>{{customer.city}}</td>
+        <td>{{customer.country}}try</td>
+        <button (click)="selectedCustomer = customer">Select</button>
+      </tr>
+    </tbody>
+  </table>
